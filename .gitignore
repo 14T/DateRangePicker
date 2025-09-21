@@ -1,8 +1,23 @@
+# macOS
 .DS_Store
-/.build
-/Packages
+
+# Swift Package Manager
+.build/
+Packages/
+.swiftpm/
+
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
 xcuserdata/
 DerivedData/
-.swiftpm/configuration/registries.json
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Network credentials
 .netrc
