@@ -16,11 +16,9 @@ Unlike the standard `MultiDatePicker`, this package allows you to **select a con
 
 ---
 
-## � Screenshot
+## 📸 Screenshots
 
-| Basic Usage | With Bounds |
-|-------------|---------------------|
-| ![Basic Demo](screenshots/demo1.png) | ![Selected Range](screenshots/demo2.png) |
+<img src="screenshots/demo1.png" width="300" alt="DateRangePicker Basic Demo"> <img src="screenshots/demo2.png" width="300" alt="DateRangePicker With Bounds">
 
 --- 
 
