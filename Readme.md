@@ -1,5 +1,11 @@
 # DateRangePicker
-## 📸 Screenshots
+## 📸 S## 📸 Screenshots
+
+| Basic Usage | With Selected Range |
+|-------------|---------------------|
+| ![DateRangePicker Basic Demo](screenshots/demo1.png) | ![DateRangePicker Selected Range](screenshots/demo2.png) |
+
+---shots
 
 ### Basic Usage
 ![DateRangePicker Basic Demo](screenshots/demo1.png)
