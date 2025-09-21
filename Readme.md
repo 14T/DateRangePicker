@@ -30,7 +30,7 @@ Unlike the standard `MultiDatePicker`, this package allows you to **select a con
 Add the package to your project:
 
 1. In Xcode, go to **File → Add Packages…**
-2. Enter the repository URL: https://github.com/yourusername/DateRangePicker.git
+2. Enter the repository URL: https://github.com/14T/DateRangePicker.git
 3. Select the **main branch** (or a tagged release once you publish).
 
 ---
@@ -171,4 +171,4 @@ Contributions are welcome! Please feel free to submit a Pull Request or open an 
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
