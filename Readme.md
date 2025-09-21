@@ -18,7 +18,7 @@ Unlike the standard `MultiDatePicker`, this package allows you to **select a con
 
 ## � Screenshot
 
-| Basic Usage | With Selected Range |
+| Basic Usage | With Bounds |
 |-------------|---------------------|
 | ![Basic Demo](screenshots/demo1.png) | ![Selected Range](screenshots/demo2.png) |
 
@@ -79,7 +79,7 @@ struct ContentView: View {
 }
 ````
 
-### Advanced Example with Validation
+### Advanced Example
 
 ```swift
 struct BookingView: View {
@@ -132,7 +132,7 @@ struct BookingView: View {
         .padding()
     }
 }
-``
+```
 
 ---
 
