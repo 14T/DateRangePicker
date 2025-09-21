@@ -34,7 +34,7 @@ struct BookingView: View {
                     bounds: bookingBounds
                 )
                 .frame(height: 350)
-                .tint(.green)
+                .tint(.red)
                 
                 if let checkIn = checkInDate, let checkOut = checkOutDate {
                     let daysBetween = Calendar.current.dateComponents([.day], from: checkIn, to: checkOut).day ?? 0
