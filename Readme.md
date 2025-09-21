@@ -10,7 +10,7 @@ Unlike the standard `MultiDatePicker`, this package allows you to **select a con
 ## ✨ Features
 - Select a **start and end date** to define a range
 - Automatically highlights all days in between
-- Uses **native SwiftUI `MultiDatePicker`**
+- Uses **native SwiftUI `MultiDatePicker`**, hence No custom complicated UI
 - Lightweight and dependency-free
 - Includes example project for quick testing
 
