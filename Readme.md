@@ -32,7 +32,7 @@ Add the package to your project:
 ### Parameters
 - **`startDate`**: A `Binding<Date?>` that holds the selected start date of the range. Set to `nil` when no range is selected.
 - **`endDate`**: A `Binding<Date?>` that holds the selected end date of the range. Set to `nil` when no range is selected.
-- **`bounds`**: A `Range<Date>` that constrains the calendar to only allow date selection within this range. This prevents users from selecting dates outside your desired timeframe.
+- **`bounds`**: The exclusive range of selectable dates. A `Range<Date>` that constrains the calendar to only allow date selection within this range. This prevents users from selecting dates outside your desired timeframe.
 
 ### Basic Example
 
@@ -104,7 +104,8 @@ struct BookingView: View {
                 bounds: bookingBounds
             )
             .frame(height: 350)
-            
+            .tint(.green)
+
             if let checkIn = checkInDate, let checkOut = checkOutDate {
                 let daysBetween = Calendar.current.dateComponents([.day], from: checkIn, to: checkOut).day ?? 0
                 Text("\(daysBetween) nights: \(checkIn.formatted(date: .abbreviated, time: .omitted)) - \(checkOut.formatted(date: .abbreviated, time: .omitted))")
@@ -138,8 +139,7 @@ DateRangePicker(
     bounds: bounds
 )
 .frame(height: 400)
-.datePickerStyle(.graphical)
-.accentColor(.blue)
+.tint(.yellow)
 ```
 
 ---

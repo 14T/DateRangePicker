@@ -24,8 +24,7 @@ struct ContentView: View {
             VStack(spacing: 20) {
                 DateRangePicker(
                     startDate: $startDate,
-                    endDate: $endDate,
-                    bounds: bounds
+                    endDate: $endDate
                 )
                 .frame(height: 400)
                 .padding()
@@ -45,12 +44,22 @@ struct ContentView: View {
                 }
                 
                 Spacer()
+                NavigationLink {
+                    BookingView()
+                } label: {
+                    Text("Go to Booking Demo")
+                        .font(.headline)
+                        .foregroundColor(.blue)
+                        .padding()
+                        .background(Color.blue.opacity(0.1))
+                        .cornerRadius(8)
+                }
+                
+                .navigationTitle("Date Range Picker")
             }
-            .navigationTitle("Date Range Picker Demo")
         }
     }
 }
-
 
 #Preview {
     ContentView()
