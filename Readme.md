@@ -16,7 +16,13 @@ Unlike the standard `MultiDatePicker`, this package allows you to **select a con
 
 ---
 
-## 📦 Installation
+## � Screenshot
+
+![DateRangePicker Demo](screenshots/demo.png)
+
+---
+
+## �📦 Installation
 
 ### Swift Package Manager (SPM)
 Add the package to your project:
