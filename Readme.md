@@ -22,7 +22,7 @@ Unlike the standard `MultiDatePicker`, this package allows you to **select a con
 |-------------|---------------------|
 | ![Basic Demo](screenshots/demo1.png) | ![Selected Range](screenshots/demo2.png) |
 
----
+--- 
 
 ## �� Installation
 
