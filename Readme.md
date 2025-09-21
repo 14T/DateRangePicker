@@ -52,19 +52,11 @@ struct ContentView: View {
     @State private var startDate: Date? = nil
     @State private var endDate: Date? = nil
     
-    private var bounds: Range<Date> {
-        let calendar = Calendar.current
-        let start = calendar.date(byAdding: .month, value: -1, to: Date())!
-        let end = calendar.date(byAdding: .month, value: 1, to: Date())!
-        return start..<end
-    }
-    
     var body: some View {
         VStack(spacing: 20) {
             DateRangePicker(
                 startDate: $startDate,
-                endDate: $endDate,
-                bounds: bounds
+                endDate: $endDate
             )
             .frame(height: 400)
             
