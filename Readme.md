@@ -9,8 +9,10 @@ Unlike the standard `MultiDatePicker`, this package allows you to **select a con
 ---
 
 ## ✨ Features
-- Select a **start and end date** in any order to define a range
-- Automatically highlights all days in between
+- Select a **start and end date** to define a range
+- Dates can be selected in any order — either a future date first or an earlier date first.
+- Automatically selects and highlights all days in between
+- Tap anywhere to cancel selection
 - Uses **native SwiftUI `MultiDatePicker`**, hence No custom complicated UI
 - Lightweight and dependency-free
 - Includes example project for quick testing
