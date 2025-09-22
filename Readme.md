@@ -4,7 +4,7 @@
 A lightweight **SwiftUI date range picker** built on top of Apple's native [`MultiDatePicker`](https://developer.apple.com/documentation/swiftui/multidatepicker).
 Unlike the standard `MultiDatePicker`, this package allows you to **select a continuous date range** by tapping a start date and an end date — everything in between is selected automatically.
 
-> ⚠️ Requires **iOS 16+** (since `MultiDatePicker` is only available starting iOS 16).
+> ⚠️ Requires **iOS 16.0+, iPadOS 16.0+, Mac Catalyst 16.0+, or visionOS 1.0+** (since `MultiDatePicker` is only available starting these versions).
 
 ---
 
