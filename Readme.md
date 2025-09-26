@@ -43,6 +43,11 @@ Add the package to your project:
 - **`endDate`**: A `Binding<Date?>` that holds the selected end date of the range. Set to `nil` when no range is selected.
 - **`bounds`**: The exclusive range of selectable dates. A `Range<Date>` that constrains the calendar to only allow date selection within this range. This prevents users from selecting dates outside your desired timeframe.
 
+#### All you need:
+```swift
+DateRangePicker(startDate: $startDate, endDate: $endDate)
+```
+            
 ### Basic Example
 
 ```swift
