@@ -2,6 +2,7 @@
 // https://docs.swift.org/swift-book
 import SwiftUI
 
+@available(iOS 16.0, visionOS 1.0, *)
 public struct DateRangePicker: View {
     static var defaultBounds: Range<Date> {
         let calendar = Calendar.current
