@@ -12,7 +12,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build for iOS
-      run: swift build
-    - name: Run tests
-      run: swift test
+    - name: Build for iOS (iOS 16.0+)
+      run: |
+        xcodebuild -scheme DateRangePicker -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.0' build
+    - name: Run tests (iOS 16.0+)
+      run: |
+        xcodebuild -scheme DateRangePicker -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.0' test
