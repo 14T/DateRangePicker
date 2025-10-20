@@ -4,6 +4,7 @@ import SwiftUI
 
 @available(iOS 16.0, visionOS 1.0, *)
 public struct DateRangePicker: View {
+    @available(iOS 16.0, visionOS 1.0, *)
     static var defaultBounds: Range<Date> {
         let calendar = Calendar.current
         let start = calendar.date(byAdding: .month, value: -6, to: Date())!
@@ -39,6 +40,7 @@ public struct DateRangePicker: View {
         }
     }
     
+    @available(iOS 16.0, visionOS 1.0, *)
     public var body: some View {
         MultiDatePicker("", selection: datesBinding, in: bounds ?? Self.defaultBounds)
             .environment(\.locale, Locale.current)
