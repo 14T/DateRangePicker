@@ -12,9 +12,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build for iOS (latest simulator)
+    - name: Pick available iPhone simulator
       run: |
-        xcodebuild -scheme DateRangePicker -destination 'platform=iOS Simulator,name=iPhone,OS=latest' build
-    - name: Run tests (latest simulator)
+        # pick the first "iPhone" device in the "available" list
+        UDID=$(xcrun simctl list devices available | grep -m1 "iPhone" | grep -oE "[A-F0-9-]{36}")
+        if [ -z "$UDID" ]; then
+          echo "No iPhone simulator found" >&2
+          exit 1
+        fi
+        echo "SIM_UDID=$UDID" >> $GITHUB_ENV
+
+    - name: Build for iOS (simulator)
       run: |
-        xcodebuild -scheme DateRangePicker -destination 'platform=iOS Simulator,name=iPhone,OS=latest' test
+        xcodebuild -scheme DateRangePicker -destination "id=$SIM_UDID" -derivedDataPath "${{ runner.temp }}/derived_data" clean build
+
+    - name: Run tests (simulator)
+      run: |
+        xcodebuild -scheme DateRangePicker -destination "id=$SIM_UDID" -derivedDataPath "${{ runner.temp }}/derived_data" test
