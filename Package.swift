@@ -23,5 +23,6 @@ let package = Package(
             name: "DateRangePickerTests",
             dependencies: ["DateRangePicker"]
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
