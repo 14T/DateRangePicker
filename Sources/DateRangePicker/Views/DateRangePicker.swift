@@ -12,11 +12,14 @@ public struct DateRangePicker: View {
         return start..<end
     }
     
+    @available(iOS 16.0, visionOS 1.0, *)
     @Binding private var startDate: Date?
+    @available(iOS 16.0, visionOS 1.0, *)
     @Binding private var endDate: Date?
     let bounds: Range<Date>?
     var calendar: Calendar = .current
 
+    @available(iOS 16.0, visionOS 1.0, *)
     public init(
         startDate: Binding<Date?>,
         endDate: Binding<Date?>,
@@ -27,6 +30,7 @@ public struct DateRangePicker: View {
         self.bounds = bounds
     }
     
+    @available(iOS 16.0, visionOS 1.0, *)
     private var datesBinding: Binding<Set<DateComponents>> {
         Binding {
             DateRangeHelper.getDatesInRange(startDate: startDate, endDate: endDate, calendar: calendar)
