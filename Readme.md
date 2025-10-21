@@ -16,6 +16,7 @@ Unlike the standard `MultiDatePicker`, this package allows you to **select a con
 - Uses **native SwiftUI `MultiDatePicker`**, hence No custom complicated UI
 - Lightweight and dependency-free
 - Includes example project for quick testing
+- Full dark mode support for a seamless appearance in both light and dark themes.
 
 ---
 
