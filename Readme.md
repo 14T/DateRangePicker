@@ -19,11 +19,13 @@ Unlike the standard `MultiDatePicker`, this package allows you to **select a con
 
 ---
 
+## 📸 Demo
+https://github.com/user-attachments/assets/cbd2d24e-09ca-4ff0-a60b-e5ff761f88ae
+
 ## 📸 Screenshots
-
 <img src="screenshots/demo1.png" width="300" alt="DateRangePicker Basic Demo"> <img src="screenshots/demo2.png" width="300" alt="DateRangePicker With Bounds">
-
 --- 
+
 
 ## Installation
 
